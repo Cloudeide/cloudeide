@@ -1,0 +1,113 @@
+name: Bug report
+description: Something behaves differently than it should
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this.
+
+        **Do not paste an API token, password or private key anywhere in this issue** — not even partially. A token prefix still identifies the token. If one has already been posted publicly, revoke it now in **Settings → API tokens**.
+
+        For a security vulnerability, close this and use [private reporting](https://github.com/cloudeide/cloudeide/security/advisories/new) instead.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: The command you ran and the output you got. Paste the real output rather than describing it.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: What someone else would need to do to see the same thing.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: |
+        Output of these three. None of them contain your token — `config` reports only whether one is set and where it came from.
+      render: shell
+      placeholder: |
+        $ cloudeide --version
+        $ cloudeide config --json
+        $ cloudeide doctor --json
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: macOS 15.2 / Ubuntu 24.04 / Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: node
+    attributes:
+      label: Node version
+      description: Output of `node --version`
+      placeholder: v20.11.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install-method
+    attributes:
+      label: How did you install it?
+      options:
+        - npm
+        - pnpm
+        - yarn
+        - bun
+        - npx (not installed)
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where does this happen?
+      options:
+        - CLI
+        - MCP server / an editor
+        - Both
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: editor
+    attributes:
+      label: Which editor, if this is an MCP issue
+      placeholder: Cursor / Claude Code / Codex
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I am on the latest version, or the problem still happens there
+          required: true
+        - label: This issue contains no tokens, passwords, keys or other credentials
+          required: true

@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest something CloudeIDE should be able to do
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem before the solution. "I cannot tell from a script whether a deploy is still running" is more useful than "add a `--watch` flag" — it leaves room for a better answer than the one you had in mind.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you running into?
+      description: What are you trying to do, and where does it break down?
+    validations:
+      required: true
+
+  - type: textarea
+    id: today
+    attributes:
+      label: What do you do about it today?
+      description: A workaround, another tool, or doing it by hand. This tells us how much the gap costs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What did you have in mind?
+      description: Optional. A rough shape is fine.
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Which part does this concern?
+      options:
+        - CLI
+        - MCP server / agent tools
+        - Documentation
+        - Both CLI and MCP
+        - Not sure
+    validations:
+      required: true
