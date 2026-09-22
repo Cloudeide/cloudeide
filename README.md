@@ -13,29 +13,35 @@
 </div>
 
 ---
-cloudeide 
+CloudEIDE
 
-cloudeide is an AI-powered code editor built on the VS Code foundation.
+The AI Code Editor with an intelligent coding agent.
 
-CloudID gives developers a complete coding environment with an AI agent that can work directly with their projects and codebase.
+CloudEIDE is an AI-powered code editor built on the VS Code foundation, designed to help developers understand, build, modify, and ship software faster.
 
-What  cloudeide Can Do
+CloudEIDE runs directly on your local machine and supports Windows and Linux, giving developers a familiar development experience while bringing an AI coding agent directly into the editor.
 
-- Write and edit code
-- Create, modify, and manage files
-- Understand project structure and codebases
-- Find bugs and coding problems
-- Fix errors and improve existing code
-- Refactor and optimize code
-- Add new features
-- Work across multiple files
-- Help developers complete coding tasks
-- Use the terminal and developer tools
-- Deploy projects when they are ready
+AI Coding Agent
 
-CloudID is designed to bring AI coding agents directly into the code editor, helping developers build, edit, debug, and ship software faster.
+CloudEIDE's agent can work directly with your project and codebase. It can understand your files and project structure, make changes across multiple files, create new files, update existing code, investigate errors, fix bugs, refactor code, implement features, and complete coding tasks from natural-language instructions.
 
-CloudID — Your AI Agent Code Editor.
+Codebase Intelligence
+
+CloudEIDE is designed to work beyond a single file. The agent can reason about the structure and relationships across your project, helping you understand existing code and make changes without manually navigating every part of the codebase.
+
+Developer Workflow
+
+Write code, edit code, navigate files, use the terminal, review changes, and work with the AI agent without leaving your editor.
+
+CloudEIDE keeps the developer in control while the AI handles repetitive and complex coding work.
+
+Build and Ship
+
+From your first line of code to a completed application, CloudEIDE helps you move through the development workflow faster.
+
+When your project is ready, you can deploy and ship it.
+
+CloudEIDE — Your AI Agent Code Editor.
 
 ## Documentation
 
